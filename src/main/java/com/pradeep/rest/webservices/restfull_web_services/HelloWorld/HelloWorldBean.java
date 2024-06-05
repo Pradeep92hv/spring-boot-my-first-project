@@ -1,4 +1,4 @@
-package com.pradeep.rest.webservices.restfull_web_services;
+package com.pradeep.rest.webservices.restfull_web_services.HelloWorld;
 
 public class HelloWorldBean {
     public  String msg;
