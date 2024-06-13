@@ -15,8 +15,8 @@ public class todoHardCodedService {
     private static int idcounter=0;
 
     static {
-        todos.add(new Todo(false,new Date(),"s","s",2));
-        todos.add(new Todo(false,new Date(),"s","p",1));
+        todos.add(new Todo(false,new Date(),"s","s",++idcounter));
+        todos.add(new Todo(false,new Date(),"s","p",++idcounter));
     }
 
     public List<Todo> findAll()
@@ -45,10 +45,9 @@ public class todoHardCodedService {
         return  null;
     }
     public Todo save(Todo todo){
-        if(todo.getId()==-1)
-        {
+        if (todo.getId() == 0 || todo.getId() == -1) {
             todo.setId(++idcounter);
-         todos.add(todo);
+            todos.add(todo);
         }
         else
         {
