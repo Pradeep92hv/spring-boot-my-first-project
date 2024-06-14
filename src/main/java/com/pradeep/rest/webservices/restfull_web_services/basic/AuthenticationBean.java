@@ -1,9 +1,9 @@
-package com.pradeep.rest.webservices.restfull_web_services.HelloWorld;
+package com.pradeep.rest.webservices.restfull_web_services.basic;
 
-public class HelloWorldBean {
+public class AuthenticationBean {
     public  String msg;
 
-    public HelloWorldBean(String msg) {
+    public AuthenticationBean(String msg) {
         this.msg = msg;
     }
 

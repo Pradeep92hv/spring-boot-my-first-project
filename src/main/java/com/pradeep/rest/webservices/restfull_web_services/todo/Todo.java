@@ -1,7 +1,7 @@
 package com.pradeep.rest.webservices.restfull_web_services.todo;
 import  java.util.*;
 
-public class Todo {
+public class Todo{
     private long id;
     private String username;
     private String description;
